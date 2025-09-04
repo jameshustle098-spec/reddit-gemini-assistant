@@ -1,8 +1,6 @@
 import { defineConfig, loadEnv } from 'vite';
-import { resolve } from 'path';
 
 export default defineConfig(({ mode }) => {
-  // Load env file based on `mode` in the root directory
   const env = loadEnv(mode, process.cwd(), '');
   
   return {
@@ -12,11 +10,9 @@ export default defineConfig(({ mode }) => {
     },
     build: {
       outDir: 'dist',
+      sourcemap: false,
       emptyOutDir: true
     },
-    server: {
-      port: 5173,
-      strictPort: true
-    }
+    base: './' // This is CRUCIAL for GitHub Pages
   };
 });
