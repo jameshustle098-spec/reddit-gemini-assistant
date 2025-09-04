@@ -4,7 +4,7 @@ import { GoogleGenAI, Type } from '@google/genai';
 
 // --- Reddit OAuth Configuration ---
 // IMPORTANT: Replace with your Reddit App's Client ID.
-const REDDIT_CLIENT_ID = 'YOUR_REDDIT_CLIENT_ID'; 
+const REDDIT_CLIENT_ID = hCAtz-h0eB9oR6qc0GBbFQ; 
 // IMPORTANT: This MUST match the Redirect URI you set in your Reddit App settings.
 const REDDIT_REDIRECT_URI = window.location.origin + window.location.pathname;
 const OAUTH_STATE = 'reddit-gemini-assistant-state'; // A static state for simplicity
