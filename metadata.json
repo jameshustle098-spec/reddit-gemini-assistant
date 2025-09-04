@@ -1,0 +1,5 @@
+{
+  "name": "Reddit Gemini Assistant",
+  "description": "An AI-powered web application to help you generate high-quality comments and posts for Reddit using the Gemini API.",
+  "requestFramePermissions": []
+}
